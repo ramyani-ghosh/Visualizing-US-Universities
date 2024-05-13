@@ -1,0 +1,79 @@
+text.my-axis-label {
+    font-family: Roboto;
+    font-size: 12px;
+
+}
+
+text.my-title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+text.my-legend {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#intro {
+    width:50%;
+}
+
+#outro{
+    width: 50%;
+}
+ h1{
+    margin-top: 100px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #00224D;
+    font-size:50px;
+    font-weight:900;
+}
+#intro p{
+    font-family:'Times New Roman', Times, serif;
+    color: #00224D;
+    font-weight:100;
+    font-size:18px;
+}
+.desc1 h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#0a4794;
+    font-size:30px;
+    font-weight:900;
+}
+.desc1 {
+    margin-right:0;
+}
+#vis-table{
+    width:90%;
+}
+
+.desc2{
+    margin-left: 100px;
+    width: 40%;
+}
+.desc2 h2{
+    color: #A70225;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:30px;
+    font-weight:900;
+}
+
+#plot2{
+    margin-left: -400px;;
+}
+
+#plot4{
+    margin-left: -700px;
+}
+
+#debtSlider{
+    margin-top: 150px;;
+    margin-left: -960px;
+    writing-mode: vertical-lr;
+    height: 200px;
+    accent-color: #00224D;
+     /* direction: rtl; */
+}
+

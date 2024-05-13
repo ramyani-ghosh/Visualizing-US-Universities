@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Data</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<center>
+    <div id = "intro">
+
+        <h1>How Do I Choose a College for Undergrad?</h1>
+        <p>Amidst the soaring costs of tuition, US universities remain hubs of ambition and aspiration. Through data-driven visualizations, let's try to unravel the factors influencing various indicators of success for students, both at an individual and an institutional level. These aim to inform a student's decision on how to choose a college.</p>
+    </div>
+
+    <table id="vis-table">
+        <tr>
+            <td><div id="plot1"></td>
+            <td><div class="desc1">     
+                <h2>Undergraduate Student Population</h2>
+                 <p>The dataset used contains data collected from 2055 US institutions. The average 
+                    undergraduate student population is about 4030. The visualization on the left shows a bubble chart 
+                    of all these institutions- the larger the bubble, the larger its undergraduate student body. The colors
+                    of the bubbles indicate the control of the institution, as outlined below. 
+                 </p>
+                 <table>
+                    <tr>
+                        <td style="color:#A0153E;opacity:0.9;">⬤</td>
+                        <td>Private College</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#00224D;opacity:0.9;">⬤</td>
+                        <td>Public College</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#5D0E41;opacity:0.9;">⬤</td>
+                        <td>Private For-Profit College</td>
+                    </tr>
+                 </table>
+                 <p><span style="color:#A0153E;">Hover over a bubble to see which university it represents, and the number of undergrads currently enrolled. </span>
+                 </p>
+            </div></td>
+        </tr>
+
+        <tr>
+            
+            <td><div class="desc2">     
+                <h2>Options by Region</h2>
+                 <p>Being such a large country, the number of colleges for higher education vary 
+                    greatly based on the region you're looking in. Travelling outside of one's state is not uncommon for a better education, however, 
+                    out-of-state tuition fees are typically significantly higher than in-state.
+                    <span style="color:#A0153E;"><br>Hover over the clusters in the 
+                    visualization to see which region has how many universities.</span>
+                    
+                 </p>
+                 
+            </div></td>
+            <td><div id="plot2"></td>
+            
+        </tr>
+
+        <tr>
+            <td><div id="plot3"></td>
+            <td><div class="desc1">     
+                <h2>Financial considerations</h2>
+                 <p>This is a box plot of average costs to study in colleges seggregated by the type of locales
+                    they are situated in. These costs include tuition fee, living costs, and financial aid.
+                    <span style="color:#A0153E;"><br> Hover over the boxes to see the median cost in each locale.</span>
+                 </p>
+                 
+            </div></td>
+        </tr>
+        <tr id="wordcloud">
+            
+            <td><div class="desc2" style="margin-top:-400px;">     
+                <h2>Student Debts</h2>
+                 <p style="margin-right: 100px;">Every year, students incur huge sums of money in debt in order to pursue college education.
+                    Out of the 2055 institutions in our dataset, 
+                    <span id="debt_num" style="color:#A0153E;font-weight: bold;"> 2055 </span> have a median debt of <span id="debt_val" style="color:#A0153E;font-weight: bold;"> $38000 </span> or less. 
+                    Move the slider around to play with these values.
+                 </p>
+                 
+            </div></td>
+            <td >
+                <p style=" margin-left: -490px; margin-top:-376px"> $38,000</p>
+                <p style=" margin-left: -458px; margin-top:210px;"> $0</p>
+            </td>
+            
+           
+            <td><div id="plot4"></div></td>
+        </tr>
+        <tr>
+            <td><div id="plot5"></td>
+            <td><div class="desc1" style="width:100%;">     
+                <h2>Admission Rate and Post-Graduation Success</h2>
+                 <p>Often, the lower the acceptance rate or admission rate of a university, the better the 
+                    quality of education it can provide. This chart plots the admission rates of the university
+                    against the mean earnings 8 years after entry into the college. The ones with the highest
+                    earnings seem to have very low acceptance rates.
+                    Furthermore, the color of the dots shows the percentage of students who completed their degree
+                    within 150% of the intended period. 
+                    <table>
+                    <tr>
+                        <td style="color:#A0153E;opacity:0.9;">⬤</td>
+                        <td> < 33% </td>
+                    </tr>
+                    <tr>
+                        <td style="color:#5D0E41;opacity:0.9;">⬤</td>
+                        <td>33% - 66%</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#00224D;opacity:0.9;">⬤</td>
+                        <td>> 66%</td>
+                    </tr>
+                 </table>
+                 <span style="color:#A0153E;">Hover over a bubble to see the university name. </span>
+                 </p>
+                 
+            </div></td>
+            
+        </tr>
+        <tr>
+            
+           
+        </tr>
+
+       
+    </table>
+    <div id = "outro">
+        <br><Br><br><br><Br><br>
+        <p>Thus, there are many factors that may influence a student's decision on which college 
+            to enrol in for undergraduate studies. These visualizations aim at highlighting a few of them.
+        </p>
+        <h1>The End.</h1>
+    </div>
+
+    
+    
+</center>
+<br>
+<br>
+<br>
+</body>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<!-- Load d3-cloud -->
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+<script src="./main.js"></script>
+</html>
